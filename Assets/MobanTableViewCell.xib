@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mobanCell" id="KGk-i7-Jjw" customClass="MobanTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="106.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阿卡波糖胶囊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFk-jE-2Dg">
+                        <rect key="frame" x="26" y="29" width="86" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.2031521267361111" green="0.19913736979166666" blue="0.20003255208333334" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500*500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zw-I3-Dy0">
+                        <rect key="frame" x="26" y="51" width="58" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浙江新药盟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8OD-xg-IwZ">
+                        <rect key="frame" x="26" y="73" width="71.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itK-c6-L0h">
+                        <rect key="frame" x="230" y="41" width="80" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="7FB-cI-NGb"/>
+                            <constraint firstAttribute="width" constant="80" id="X9y-CZ-ieh"/>
+                        </constraints>
+                        <state key="normal" title="药品详情">
+                            <color key="titleColor" red="0.01166294643" green="0.68657924110000002" blue="0.3969866071" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="detailClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fMc-jt-wZP"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3Zw-I3-Dy0" firstAttribute="top" secondItem="iFk-jE-2Dg" secondAttribute="bottom" constant="5" id="0Ai-JO-XEZ"/>
+                    <constraint firstItem="8OD-xg-IwZ" firstAttribute="top" secondItem="3Zw-I3-Dy0" secondAttribute="bottom" constant="5" id="59J-fX-nMI"/>
+                    <constraint firstItem="itK-c6-L0h" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SpM-ag-zer"/>
+                    <constraint firstItem="8OD-xg-IwZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="ZST-Ix-iw2"/>
+                    <constraint firstItem="3Zw-I3-Dy0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="koY-uP-2Ns"/>
+                    <constraint firstItem="iFk-jE-2Dg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="18" id="w3s-RJ-iLa"/>
+                    <constraint firstAttribute="trailing" secondItem="itK-c6-L0h" secondAttribute="trailing" constant="10" id="wHe-Dj-kRy"/>
+                    <constraint firstItem="iFk-jE-2Dg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="wvR-Sq-XFA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="detailBtn" destination="itK-c6-L0h" id="u6t-xB-IYz"/>
+                <outlet property="labelName" destination="iFk-jE-2Dg" id="8R1-HV-Eia"/>
+                <outlet property="labelPack" destination="3Zw-I3-Dy0" id="2km-qc-E7v"/>
+                <outlet property="labelProduct" destination="8OD-xg-IwZ" id="sos-7J-Eok"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

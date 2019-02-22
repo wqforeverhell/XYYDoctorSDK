@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YaopingSmallCell" rowHeight="58" id="KGk-i7-Jjw" customClass="YaopingSmallCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="57.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejq-iw-0PJ">
+                        <rect key="frame" x="12" y="0.0" width="296" height="57.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阿莫西林颗粒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obx-6u-FMx">
+                                <rect key="frame" x="12" y="10" width="86" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.25490196079999999" green="0.25490196079999999" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXw-Oq-cTo">
+                                <rect key="frame" x="231" y="2" width="50" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="fyR-xI-EM1"/>
+                                    <constraint firstAttribute="height" constant="32" id="w4m-Nz-iN3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="添加">
+                                    <color key="titleColor" red="0.17254901959999999" green="0.74901960779999999" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAdd:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gqI-qD-guT"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提成金额:¥ 50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2U-yE-S2T">
+                                <rect key="frame" x="196" y="32" width="85" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.66274509800000003" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="贵州白云山药品公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LI-iK-lsE">
+                                <rect key="frame" x="12" y="32" width="119.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6LI-iK-lsE" firstAttribute="top" secondItem="Obx-6u-FMx" secondAttribute="bottom" constant="5" id="Dob-rT-l2V"/>
+                            <constraint firstItem="e2U-yE-S2T" firstAttribute="centerY" secondItem="6LI-iK-lsE" secondAttribute="centerY" id="F9m-bC-hXi"/>
+                            <constraint firstItem="Obx-6u-FMx" firstAttribute="top" secondItem="ejq-iw-0PJ" secondAttribute="top" constant="10" id="KH4-DU-WqE"/>
+                            <constraint firstItem="6LI-iK-lsE" firstAttribute="leading" secondItem="Obx-6u-FMx" secondAttribute="leading" id="Kiy-50-xJ7"/>
+                            <constraint firstItem="e2U-yE-S2T" firstAttribute="trailing" secondItem="iXw-Oq-cTo" secondAttribute="trailing" id="MQ3-Xf-o3V"/>
+                            <constraint firstItem="iXw-Oq-cTo" firstAttribute="centerY" secondItem="Obx-6u-FMx" secondAttribute="centerY" id="Whd-L5-qSp"/>
+                            <constraint firstItem="Obx-6u-FMx" firstAttribute="leading" secondItem="ejq-iw-0PJ" secondAttribute="leading" constant="12" id="pDC-sw-3g1"/>
+                            <constraint firstAttribute="trailing" secondItem="iXw-Oq-cTo" secondAttribute="trailing" constant="15" id="s6M-4a-km5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ejq-iw-0PJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="EFJ-js-Wx4"/>
+                    <constraint firstAttribute="trailing" secondItem="ejq-iw-0PJ" secondAttribute="trailing" constant="12" id="JpM-d8-QfL"/>
+                    <constraint firstAttribute="bottom" secondItem="ejq-iw-0PJ" secondAttribute="bottom" id="SAv-y7-IOq"/>
+                    <constraint firstItem="ejq-iw-0PJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aXu-OG-7PX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="labChangjia" destination="6LI-iK-lsE" id="WAl-t6-Unl"/>
+                <outlet property="labTcPice" destination="e2U-yE-S2T" id="cww-Fq-9Bg"/>
+                <outlet property="labYpName" destination="Obx-6u-FMx" id="W9a-Po-5ua"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="72.5"/>
+        </tableViewCell>
+    </objects>
+</document>
