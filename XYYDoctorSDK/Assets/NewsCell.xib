@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="newCell" id="KGk-i7-Jjw" customClass="NewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7DE-NM-rRU">
+                        <rect key="frame" x="10" y="0.0" width="355" height="94.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yx_nodata" translatesAutoresizingMaskIntoConstraints="NO" id="WTB-Np-2cG">
+                                <rect key="frame" x="230" y="10" width="115" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="4sB-i1-6AG"/>
+                                    <constraint firstAttribute="width" constant="115" id="yHO-zW-TPU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="隐形正畸的危害？30岁再进行正 畸还来得及吗" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh0-An-AsH">
+                                <rect key="frame" x="10" y="12" width="214" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20071072049999999" blue="0.20065646700000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="号放假等放假时的速度就是快到家号放假等放假时的速度就是快到家" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov6-P1-JRX">
+                                <rect key="frame" x="10" y="54" width="214" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="zI5-xH-iSK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.53445095486111116" green="0.53396267361111116" blue="0.53187391493055558" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5B0-fI-wJz">
+                                <rect key="frame" x="10" y="94" width="345" height="1"/>
+                                <color key="backgroundColor" red="0.85055881076388884" green="0.85007052951388884" blue="0.851806640625" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="dJg-Vw-mFl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5B0-fI-wJz" secondAttribute="trailing" id="2ud-ZF-LhC"/>
+                            <constraint firstAttribute="bottom" secondItem="5B0-fI-wJz" secondAttribute="bottom" id="5Ik-Zp-MKV"/>
+                            <constraint firstItem="lh0-An-AsH" firstAttribute="leading" secondItem="7DE-NM-rRU" secondAttribute="leading" constant="10" id="8po-bR-hfg"/>
+                            <constraint firstItem="WTB-Np-2cG" firstAttribute="leading" secondItem="lh0-An-AsH" secondAttribute="trailing" constant="6" id="C1z-js-4c0"/>
+                            <constraint firstAttribute="trailing" secondItem="WTB-Np-2cG" secondAttribute="trailing" constant="10" id="E3G-kC-idZ"/>
+                            <constraint firstItem="5B0-fI-wJz" firstAttribute="leading" secondItem="7DE-NM-rRU" secondAttribute="leading" constant="10" id="Jc6-iT-ZLu"/>
+                            <constraint firstItem="WTB-Np-2cG" firstAttribute="top" secondItem="7DE-NM-rRU" secondAttribute="top" constant="10" id="OmP-km-b9A"/>
+                            <constraint firstItem="WTB-Np-2cG" firstAttribute="leading" secondItem="ov6-P1-JRX" secondAttribute="trailing" constant="6" id="WeF-AW-vCg"/>
+                            <constraint firstItem="ov6-P1-JRX" firstAttribute="top" secondItem="lh0-An-AsH" secondAttribute="bottom" constant="6" id="gNa-De-cOF"/>
+                            <constraint firstItem="lh0-An-AsH" firstAttribute="top" secondItem="7DE-NM-rRU" secondAttribute="top" constant="12" id="gYH-gk-8Nk"/>
+                            <constraint firstItem="ov6-P1-JRX" firstAttribute="leading" secondItem="7DE-NM-rRU" secondAttribute="leading" constant="10" id="hIA-00-V5c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="7DE-NM-rRU" secondAttribute="bottom" id="G8q-h9-OpQ"/>
+                    <constraint firstAttribute="trailing" secondItem="7DE-NM-rRU" secondAttribute="trailing" constant="10" id="Mre-nT-9GG"/>
+                    <constraint firstItem="7DE-NM-rRU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="RFt-Y9-k8F"/>
+                    <constraint firstItem="7DE-NM-rRU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WNH-6d-P62"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bgView" destination="7DE-NM-rRU" id="6YL-UG-uMI"/>
+                <outlet property="contentLabel" destination="ov6-P1-JRX" id="b39-yQ-Z9T"/>
+                <outlet property="lineView" destination="5B0-fI-wJz" id="FFh-Va-LO8"/>
+                <outlet property="picImageView" destination="WTB-Np-2cG" id="foq-is-IMU"/>
+                <outlet property="titleLabel" destination="lh0-An-AsH" id="Znh-lx-xEP"/>
+            </connections>
+            <point key="canvasLocation" x="66.5" y="53.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yx_nodata" width="139" height="184"/>
+    </resources>
+</document>
